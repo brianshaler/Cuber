@@ -19,6 +19,7 @@ Preview:
 
     open demo/index.html
 
+View CSS3 demo here: [http://brianshaler.github.com/Cuber/](http://brianshaler.github.com/Cuber/)
 
 =====
 
