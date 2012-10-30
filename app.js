@@ -95,7 +95,7 @@
       side = sides[current_side].side;
       for (y = _j = 0; 0 <= size ? _j <= size : _j >= size; y = 0 <= size ? ++_j : --_j) {
         for (x = _k = 0; 0 <= size ? _k <= size : _k >= size; x = 0 <= size ? ++_k : --_k) {
-          _ref = get_angle_to(x, y, side), lng = _ref[0], lat = _ref[1];
+          _ref = get_angle_to(side, x, y), lng = _ref[0], lat = _ref[1];
           int_x = parseInt(lng / PI / 2 * source_image.width);
           int_y = parseInt((lat + PI / 2) / PI * source_image.height);
           col = source_image.getPixel(int_x, int_y);
@@ -110,8 +110,8 @@
     }
   };
 
-  get_angle_to = function(x, y, side) {
-    var X, Y, Z, hyp, lat, latOffset, lng, lngOffset, mult;
+  get_angle_to = function(side, x, y) {
+    var X, Y, Z, hyp, lat, latOffset, lng, lngOffset;
     X = x - size / 2;
     Y = y - size / 2;
     Z = size / 2;
@@ -133,8 +133,7 @@
     while (lng < 0) {
       lng += PI * 2;
     }
-    mult = 100000;
-    lng = ((lng * mult) % (PI * 2 * mult)) / mult;
+    lng = lng % (PI * 2);
     return [lng, lat];
   };
 
