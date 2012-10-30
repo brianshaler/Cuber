@@ -1,0 +1,30 @@
+{
+  "name": "Cuber",
+  "preferGlobal": "false",
+  "version": "0.0.1",
+  "author": "Brian Shaler",
+  "description": "Node.js CLI app to convert a spherical panorama source image into a cubic panorama",
+  "contributors": [ 
+    {
+      "name": "Brian Shaler",
+      "email": "brianshaler@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brianshaler/Cuber.git"
+  },
+  "keywords": [
+    "image processing",
+    "panorama",
+    "cli"
+  ],
+  "dependencies" : {
+    "gd"  : "git://github.com/taggon/node-gd.git#master",
+    "optimist" : "*"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.8"
+  }
+}
