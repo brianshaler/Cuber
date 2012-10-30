@@ -15,6 +15,10 @@ Processing an image:
 
     node app.js --src images/demo.jpg --output output/
 
+Preview:
+
+    open demo/index.html
+
 
 =====
 
