@@ -7,6 +7,8 @@ Install dependencies:
 
     npm install
 
+Note that this application uses GD bindings but does not include the GD image processing library itself. Make sure GD is installed, then you may need to follow the sparse instructions in the [node-gd](https://github.com/taggon/node-gd) README.
+
 Building app.js:
 
     coffee -j app.js -c src/app.coffee
