@@ -21,7 +21,7 @@ Preview:
 
     open demo/index.html
 
-View CSS3 demo here: [http://brianshaler.github.com/Cuber/](http://brianshaler.github.com/Cuber/)
+View CSS3 demo here: [http://brianshaler.github.com/Cuber/](http://brianshaler.github.com/Cuber/) (Note: I think I only used -webkit- prefixes on the demo, so view with Chrome or Safari..)
 
 =====
 
